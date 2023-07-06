@@ -1,0 +1,61 @@
+main *{
+    font-size: 1.3rem;
+}
+.carousel .carousel-item {
+    height: 400px;
+}
+.carousel-item img {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      min-height: 400px;
+}
+#nom_producto{
+    font-weight: 500;
+    font-size: 30px;
+}
+#contenedor_corazon{
+    border-radius: 50%;
+    border: 1px solid red;
+}
+#precio{
+    font-weight: 400;
+    font-size: 25px;
+}
+#descripcion{
+    font-weight: 400;
+    font-size: 20px;
+    color: grey;
+}
+#contenedor_categoria{
+    background-color: rgba(128, 128, 128, 0.304);
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+#num_visitas{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#fecha{
+    font-size: 16px;
+    font-weight: 400;
+}
+.row{
+    margin-bottom: 15px;
+}
+#contenedor_ubicacion{
+    font-size: 15px;
+}
+#contenedor_chat,#contenedor_usuario{
+    background-color: rgba(137, 43, 226, 0.185);
+    transition: background-color 0.4s ease;
+    transition: color 0.2s ease;
+    color: black;
+}
+#contenedor_chat:hover,#contenedor_usuario:hover{
+    background-color: rgba(75, 14, 132, 0.533);
+    color: rgba(255, 255, 255, 0.904);
+}

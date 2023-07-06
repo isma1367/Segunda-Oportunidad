@@ -1,0 +1,29 @@
+.producto{
+    max-height: 500px;
+}
+.producto img{
+    max-height: 280px;
+}
+.card-text{
+    max-height: 70px;
+    overflow: hidden;
+    font-size: 13px;
+}
+.nom_producto{
+    overflow: hidden;
+    max-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.corazon:hover{
+    cursor: pointer;
+}
+
+.editar_producto {
+    background-color: #643843 !important;
+    color: white !important;
+    border: none !important;
+}
+input:hover, input:focus{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

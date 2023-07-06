@@ -1,0 +1,107 @@
+/* Notificaciones */
+.contenedor-avisos {
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+	width: 100%;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 20px;
+}
+
+.aviso {
+	z-index: 2;
+	background-color: gray;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 10px;
+
+	/* Animaciones */
+	animation-name: entrada;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-out; /* la acción empieza rápido pero termina despacio */
+}
+
+.aviso.exito {
+	background-color: #3ab65c !important;
+	color: white;
+}
+.aviso.error {
+	background-color: #bf333b;
+	color: white;
+}
+.aviso.info {
+	background-color: #ceb8fb;
+	color: rgb(61, 0, 61);
+	border: 2px solid rgb(61, 0, 61);
+}
+.aviso.warning {
+	background-color: #bc8c12;
+	color: white;
+}
+
+.aviso .contenido {
+	display: grid;
+	grid-template-columns: 30px auto;
+	align-items: center;
+	gap: 15px;
+	padding: 15px;
+}
+
+.aviso .icono {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.aviso .titulo {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.aviso .btn-cerrar {
+	background: rgba(0, 0, 0, 0.1) !important;
+	border: none;
+	cursor: pointer;
+	padding: 0px 5px;
+	transition: 0.3s ease all;
+}
+
+.aviso .btn-cerrar:hover {
+	background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.aviso .btn-cerrar .icono {
+	width: 20px;
+	height: 20px;
+	color: white !important;
+}
+
+/* ANIMACIONES CON CSS */
+@keyframes entrada {
+	from {
+		transform: translateY(100px);
+		opacity: 0;
+	} 
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes salida {
+	from {
+		transform: translateX(0px);
+	} 
+	to {
+		transform: translateX(calc(100% + 40px)); /* para que desaparezca de la pantalla */
+	}
+}
+
+/* Clase que trabaja con la animación "salida" */
+.aviso.saliendo {
+	animation-name: salida;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards; /* cuando se produzca la animación, te quedas en la posición última */
+}

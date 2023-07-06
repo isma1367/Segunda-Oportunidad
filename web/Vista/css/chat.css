@@ -1,0 +1,105 @@
+ul{
+    list-style: none;
+}
+.card{
+    height: 600px !important;
+}
+#lista_contactos{
+    height: 500px;
+    list-style: none;
+    overflow-y: scroll;
+}
+.colegon{
+    display: block;
+}
+
+.colegon:hover{
+    cursor: pointer;
+    background-color: #e7cbcb;
+}
+.colegon img{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.colegon .nombre{
+    font-size: 20px;
+}
+.cabecera_perfil{
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.datos_perfil *{
+    display: inline;
+}
+.datos_perfil img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.datos_perfil h5{
+    margin-left: 10px;
+    font-size: 30px;
+}
+#contenedor_chat{
+    height: 400px;
+    overflow-y: scroll;
+    width: 100%;
+}
+#footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mensaje{
+    display: flex;
+    align-content: center;
+    position: relative;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+.contenido{
+    max-width: 50%;
+    border-radius: 10px;
+    padding: 7px;
+    padding-bottom: 20px;
+    min-width: 170px;
+  
+}
+.fecha{
+    position: absolute;
+    bottom: 2px;
+    font-size: 12px;
+}
+.mi_mensaje .fecha{
+    right: 8px;
+}
+.mensaje_otro .fecha{
+    left: 8px;
+}
+.mi_mensaje .contenido{
+    background-color: #e7c4d3;
+   
+}
+.mensaje_otro .contenido{
+    background-color: #d0cfcf;
+    
+}
+.mi_mensaje{
+   justify-content: end;
+}
+.mensaje_otro{
+    justify-content: start;
+}
+.datos_perfil{
+    width: 95% !important;
+    border-radius: 10px;
+}
+.datos_perfil:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}

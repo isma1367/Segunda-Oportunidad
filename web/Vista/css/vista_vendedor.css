@@ -1,0 +1,25 @@
+#cabecera_perfil{
+    min-height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#foto_perfil{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.valoracion{
+    min-height: 40px;
+}
+#range_valoracion{
+margin: 10px;
+width: 300px;
+}
+#comentario_valoracion{
+    margin-top: 20px;
+}
+td{
+    text-align: center;
+    vertical-align: center;
+}
