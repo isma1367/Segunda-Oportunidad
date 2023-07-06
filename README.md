@@ -10,7 +10,9 @@ _BBDD_
 	- Los parametros de conexión con la BBDD se incluyen en (web/Modelo/conexion.php)
 
 _AJAX_
-   Múltiples funcionalidades de la aplicación funcionan con Ajax (JavaScript), asi como la paginación de productos, el chat o el sistema de filtrado de productos. Para ello es necesario cambiar las URL's de estos ficheros para que la web funcione correctamente.
+
+   Múltiples funcionalidades de la aplicación funcionan con Ajax (JavaScript), asi como la paginación de productos, el chat o el sistema de filtrado de productos. 
+   Para ello es necesario cambiar las URL's de estos ficheros para que la web funcione correctamente.
 
 const baseURL = "{Ruta del proyecto}/web";
 
