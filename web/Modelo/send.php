@@ -16,12 +16,12 @@ try {
     $mail->SMTPSecure = "tls";                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'segunda.oportunidad.oficial@gmail.com';           //SMTP username
-    $mail->Password   = 'sbezshhckmeexeiu';                               //SMTP password
+    $mail->Username   = 'Tu correo';           //SMTP username
+    $mail->Password   = 'Tu contraseña';                               //SMTP password
     $mail->Port       = "587";                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('segunda.oportunidad.oficial@gmail.com');
+    $mail->setFrom('Tu correo');
     $mail->addAddress($correo);     //Add a recipient
 
     //Content
